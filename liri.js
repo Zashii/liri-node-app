@@ -54,7 +54,7 @@ var lirify = function(args) {
         if (args[1] != undefined) {    
             request("http://www.omdbapi.com/?apikey=trilogy&t=" + args[1], function(error, response, body){
                 if (!error && response.statusCode === 200){1
-                    console.log("*********************** IMDB *********************");
+                    console.log("*********************** OMDB *********************");
                     console.log("Movie Title: " + JSON.parse(body).Title);
                     console.log("Year of Release: " + JSON.parse(body).Year);
                     console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
@@ -63,13 +63,13 @@ var lirify = function(args) {
                     console.log("Language: " + JSON.parse(body).Language);
                     console.log("Plot: " + JSON.parse(body).Plot);
                     console.log("Actors: " + JSON.parse(body).Actors);
-                    console.log("*********************** IMDB *********************");
+                    console.log("*********************** OMDB *********************");
                 }
             });
         } else {
             request("http://www.omdbapi.com/?apikey=trilogy&t=Mr.Nobody", function(error, response, body){
                 if (!error && response.statusCode === 200){
-                    console.log("*********************** IMDB *********************");
+                    console.log("*********************** OMDB *********************");
                     console.log("Movie Title: " + JSON.parse(body).Title);
                     console.log("Year of Release: " + JSON.parse(body).Year);
                     console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
@@ -78,7 +78,7 @@ var lirify = function(args) {
                     console.log("Language: " + JSON.parse(body).Language);
                     console.log("Plot: " + JSON.parse(body).Plot);
                     console.log("Actors: " + JSON.parse(body).Actors);
-                    console.log("*********************** IMDB *********************");
+                    console.log("*********************** OMDB *********************");
                 }
             });
         }
