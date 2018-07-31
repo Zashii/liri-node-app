@@ -8,6 +8,6 @@ Run "movie-this" to call upon omdb's database for information on a movie you wan
 
 Run "do-what-it-says" to call upon a random command from random.txt!
 
-Type: node liri.js <command> <name of song or movie>
+Type: node liri.js command name_of_song_or_movie
   
   
