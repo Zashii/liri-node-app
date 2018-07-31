@@ -49,7 +49,7 @@ var lirify = function(args) {
 
     var request = require("request");
 
-    //Using the IMDB api
+    //Using the OMDB api
     if (args[0] == "movie-this"){
         if (args[1] != undefined) {    
             request("http://www.omdbapi.com/?apikey=trilogy&t=" + args[1], function(error, response, body){
